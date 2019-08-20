@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background-image: url('../images/back.jpg');
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.body-wrapper-center {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.body-wrapper-center>.white-box-wrapper {
+    background-color: #fff;
+    width: 1000px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    padding: 20px 0 40px 0;
+    /* margin-top:50px; */
+}
+
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 140px;
+}
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper div{
+    padding-bottom:10px;
+}
+
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:5px;
+    margin: 0 40px;
+   
+}
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section div{
+    margin:0;
+    padding:0;
+    padding:3px 0;
+    transition:0.5s;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section >div:hover {
+   font-weight: 400;
+   letter-spacing: 2px;
+   cursor: pointer;
+   font-weight:300;
+}
+
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section p{
+    margin:0;
+    padding:0;
+    font-weight:300;
+    font-size:1.3em;
+    margin-left:10px;
+    text-transform: uppercase;
+}
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section p:hover{
+    font-weight: 400;
+}
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section  i{
+    color:#EB4D4D;
+    font-size:2em;
+    margin-right:10px;
+    font-weight:100;
+    
+}
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section >.dice-image{
+    margin:90px 0;
+    display:block;
+}
+.body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section img{
+    width:120px;
+}
+.player {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.player>.name {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+.player>.name h1{
+    font-weight:300;
+}
+.player>.score {
+    color: #EB4D4D;
+    font-size: 2.3em;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.player>.score h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+.player>.final-score {
+    background-color: #EB4D4D;
+    width: 100px;
+    margin-top: 70px;
+}
+
+.player>.final-score p:nth-child(1) {
+    color: black;
+    font-size: 0.9em;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+.player>.final-score p:nth-child(2) {
+    color: white;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 12px;
+    font-weight: 100;
+}
+
+.active >.player >.name h1{
+    font-weight:500;
+    position:relative;
+}
+.active >.player >.name h1::after{
+    content:'';
+    background-color:#EB4D4D;
+    height:13px;
+    width:13px;
+    border-radius:50%;
+    position: absolute;
+    top:15px;
+    margin-left:20px;
+}
+.color{
+    color:#EB4D4D;
+    font-weight:600;
+}
+@media (max-width:700px){
+    .body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section p{
+        margin:0;
+        padding:0;
+        text-align:center;
+    }
+    .body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section i{
+        width:50px;
+        text-align:center;
+        margin:0;
+        padding:0;
+        
+    }
+    .body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section div{
+       flex-direction:column;
+       align-items:center;
+       justify-content: space-between;
+      
+    }
+    .body-wrapper-center>.white-box-wrapper{
+        width:650px;
+    }
+    .body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section >div:hover {
+        font-weight: 100;
+        letter-spacing: 0;
+        cursor: pointer;
+     }
+   
+     .body-wrapper-center>.white-box-wrapper>.sections-wrapper>.middle-section >div p:hover{
+        font-weight: 300;   
+     }
+}
+
